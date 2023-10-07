@@ -16,8 +16,8 @@ import HomeImgList03 from "../../images/Home/HomeImgList03.png";
 import HomeImgList04 from "../../images/Home/HomeImgList04.png";
 import HomeImgList05 from "../../images/Home/HomeImgList05.png";
 import HomeImgList06 from "../../images/Home/HomeImgList06.png";
-import HomeImgList07 from "../../images/Home/HomeImgList07.png";
-import HomeImgList08 from "../../images/Home/HomeImgList08.png";
+import HomeImgList07 from "../../images/Home/HomeImgList07.jpg";
+import HomeImgList08 from "../../images/Home/HomeImgList08.jpg";
 import slideImg01 from "../../images/Home/sliderImage01.jpg";
 import slideImg02 from "../../images/Home/sliderImage02.jpg";
 import slideImg03 from "../../images/Home/sliderImage03.jpg";
@@ -76,17 +76,17 @@ const Home = () => {
               {[
                 {
                   img: hotImg,
-                  text: "Выглядят оригинально",
+                  text: "Прекрасно греют",
                 },
 
                 {
                   img: protectImg,
-                  text: "Дополняют и создают дизайн интерьера",
+                  text: "Выглядят как роскошные предметы интерьера",
                 },
 
                 {
                   img: ecoImg,
-                  text: "Cоздают благоприятный микроклимат",
+                  text: "Создают благоприятный микроклимат",
                 },
               ].map(({ img, text }) => (
                 <li key={text}>
