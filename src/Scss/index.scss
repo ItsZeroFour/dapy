@@ -1,0 +1,81 @@
+@import "./fonts";
+@import "./reset";
+@import "./vars";
+
+/* ======================= MAIN STYLES ======================= */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  background: var(--color-white);
+  color: var(--color-dark);
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-block-start: 75px;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  color: inherit;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+h4 {
+  font-size: 32px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+textarea {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  color: var(--color-white);
+  border-radius: var(--border-radius-sm);
+  background: var(--color-red);
+  font-size: 20px;
+}
+
+.swiper-pagination-bullet-active {
+  width: 50px !important;
+  border-radius: 14px !important;
+}
