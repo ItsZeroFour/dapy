@@ -7,7 +7,7 @@ import logo from "../../images/Home/logo.png";
 import hotImg from "../../images/Home/hotIcon.svg";
 import protectImg from "../../images/Home/protectIcon.svg";
 import ecoImg from "../../images/Home/ecoIcon.svg";
-import catImg from "../../images/Home/cat.jpg";
+import homeAboutImg from "../../images/Home/homeAbout.jpg";
 import radiators from "../../images/Home/radiators.jpg";
 import towel from "../../images/Home/towel.jpg";
 import HomeImgList01 from "../../images/Home/HomeImgList01.png";
@@ -76,17 +76,17 @@ const Home = () => {
               {[
                 {
                   img: hotImg,
-                  text: "Греют, как чугунные батареи.",
+                  text: "Выглядят оригинально",
                 },
 
                 {
                   img: protectImg,
-                  text: "Прочные.",
+                  text: "Дополняют и создают дизайн интерьера",
                 },
 
                 {
                   img: ecoImg,
-                  text: "Экологически чистые.",
+                  text: "Cоздают благоприятный микроклимат",
                 },
               ].map(({ img, text }) => (
                 <li key={text}>
@@ -98,7 +98,7 @@ const Home = () => {
           </div>
 
           <div className={style.home__about__right}>
-            <img src={catImg} alt="cat" />
+            <img src={homeAboutImg} alt="cat" />
           </div>
         </section>
 

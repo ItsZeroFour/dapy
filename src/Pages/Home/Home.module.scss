@@ -180,6 +180,9 @@
   }
 
   img {
+    width: 449px;
+    height: 338px;
+
     @media (max-width: 948px) {
       width: 257px;
       height: 220px;
@@ -250,7 +253,7 @@
       position: relative;
       margin-top: 80%;
       font-family: "Inter-md", sans-serif;
-      color: var(--color-white);
+      color: var(--color-balck);
       z-index: 1;
 
       &::before {
@@ -261,7 +264,7 @@
         width: 176px;
         height: 4px;
 
-        background: var(--color-white);
+        background: var(--color-red);
 
         @media (max-width: 603px) {
           width: 80px;
@@ -304,6 +307,7 @@
 
       h4 {
         margin-top: 6rem;
+        color: var(--color-white);
 
         @media (max-width: 806px) {
           margin-top: 3rem;
