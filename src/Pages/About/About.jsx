@@ -71,6 +71,47 @@ const About = () => {
               </ul>
             </div>
           </section>
+
+          <section className={style.about__advantages__map}>
+            <p>
+              Производство, склад и штаб-квартира компании находятся в
+              наукограде Обнинск Калужской области.
+            </p>
+
+            <div style={{ position: "relative", overflow: "hidden", marginTop: '57px', width: '80%' }}>
+              <a
+                href="https://yandex.com/maps?utm_medium=mapframe&utm_source=maps"
+                style={{
+                  color: "#eee",
+                  fontSize: "12px",
+                  position: "absolute",
+                  top: "0px",
+                }}
+              >
+                Яндекс Карты
+              </a>
+              <a
+                href="https://yandex.com/maps/?ll=38.314044%2C54.131092&utm_medium=mapframe&utm_source=maps&z=6.79"
+                style={{
+                  color: "#eee",
+                  fontSize: "12px",
+                  position: "absolute",
+                  top: "0px",
+                }}
+              >
+                Россия — Яндекс Карты
+              </a>
+
+              <iframe
+                src="https://yandex.com/map-widget/v1/?ll=38.314044%2C54.131092&z=6.79"
+                width="100%"
+                height="420"
+                // frameborder="1"
+                // allowfullscreen="true"
+                // style="position:relative;"
+              ></iframe>
+            </div>
+          </section>
         </div>
       </div>
     </main>
