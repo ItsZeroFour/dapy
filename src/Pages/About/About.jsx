@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./About.module.scss";
 import aboutTopImg from "../../images/About/aboutTop.jpg";
+import { AiOutlineCheck } from "react-icons/ai";
 
 const About = () => {
   return (
@@ -43,7 +44,32 @@ const About = () => {
           </section>
 
           <section className={style.about__advantages}>
-            
+            <p className={style.about__advantages__title}>О бренде</p>
+
+            <div className={style.about__advantages__content}>
+              <div className={style.about__advantages__text}>
+                <p>Производственный участок имеет ряд цехов</p>
+                <p>
+                  Завод способен быстро масштабироваться и расти, по мере роста
+                  спроса на продукцию DAPY.
+                </p>
+              </div>
+
+              <ul className={style.about__advantages__list}>
+                {[
+                  "Металлообработка",
+                  "Постобработка",
+                  "Литье",
+                  "Сварка",
+                  "Упаковка",
+                ].map((item) => (
+                  <li key={item}>
+                    <AiOutlineCheck />
+                    <p>{item}</p>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </section>
         </div>
       </div>

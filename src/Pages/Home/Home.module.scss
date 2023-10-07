@@ -182,6 +182,7 @@
   img {
     width: 449px;
     height: 338px;
+    object-fit: cover;
 
     @media (max-width: 948px) {
       width: 257px;
@@ -252,19 +253,26 @@
     h4 {
       position: relative;
       margin-top: 80%;
-      font-family: "Inter-md", sans-serif;
-      color: var(--color-balck);
+      font-size: 28px;
+      font-family: "Inter-bd", sans-serif;
+      color: var(--color-white);
+
+      transform-style: preserve-3d;
+
       z-index: 1;
 
       &::before {
         content: "";
         position: absolute;
-        bottom: -70%;
+        transform: translateZ(-1px);
+        // bottom: -70%;
+        right: 0.2rem;
 
-        width: 176px;
-        height: 4px;
+        width: 100%;
+        height: 35px;
 
         background: var(--color-red);
+        border-radius: var(--border-radius-sm);
 
         @media (max-width: 603px) {
           width: 80px;
